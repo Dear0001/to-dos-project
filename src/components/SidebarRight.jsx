@@ -104,7 +104,7 @@ export const SidebarRight = () => {
             {profileData.map((profile, index) => (
               <li
                 key={index}
-                className={`py-3 sm:py-4  border-t-2 border-gray-500 h-24`}
+                className={`py-3 sm:py-4  border-t-2 border-gray-300 h-24`}
                 
               >
                 <div className="flex items-center ">

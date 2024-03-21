@@ -9,7 +9,7 @@ export const Layout = () => {
   return (
     <div className="bg-wrapper container-width text-black-800 rounded-[35px]">
       <Navbar />
-      <div className="grid grid-cols-12 gap-4">
+      <div className="grid grid-cols-12 gap-2">
         <div className="col-span-1 w-full">
           <SidBarLeft />
         </div>

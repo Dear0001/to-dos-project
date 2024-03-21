@@ -139,15 +139,16 @@ const Card = ({
 export const CardsList = ({ cardData }) => {
   return (
     <div className="grid grid-cols-3 gap-3 py-4">
+      {/* Default card */}
+      {initialCardData.map((card, index) => (
+        <Card key={index + cardData.length} {...card} />
+      ))}
+      
       {/* <DataCard /> */}
       {cardData.map((card, index) => (
         <Card key={index} {...card} />
       ))}
 
-      {/* Default card */}
-      {initialCardData.map((card, index) => (
-        <Card key={index + cardData.length} {...card} />
-      ))}
     </div>
   );
 };
